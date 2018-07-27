@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    background: linear-gradient(90deg, lightgreen, skyblue);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+li {
+    font-family: 'Poor Story', cursive;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+li a {
+    color: black;
+}
+li a{
+    color: black;
+}
+li a{
+    color: black;
+}
+li a{
+    color: black;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+            <style type="text/css">
+                button{
+                    width: 30px;
+                    background: salmon;
+                    color: white;
+                    border: none;
+                    padding: 2px;
+                }
+                button:nth-child(2n){
+                    background: lightgreen;
+                }
+                button:hover {
+                    background: black;
+                }
+                .header{
+                    font-family: 'Raleway', sans-serif;
+                }
+                .buttongen-link{
+                    font-family: 'Poor Story', cursive;
+                }
+                
+            </style>
+    </head>
+    <body>
+        <h1 class="header">Button Generater</h1>
+
+        <script>
+            let num = 1
+            let id = setInterval(function(){
+                let btn = document.createElement("button");
+                btn.innerText = num; num++;
+                document.body.appendChild(btn);
+            }, 1000/30)
+            
+            setTimeout(function(){
+                clearInterval(id);
+            }, 3000)
+        </script>
+    
+    
+        <a class="buttongen-link" href="../index.html"> Back to Main</a>
+    
+    </body>
+
+</html>
