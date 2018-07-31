@@ -1,0 +1,61 @@
+.heading{
+    font-family: 'Raleway', sans-serif;
+}
+.loadingscreen-link{
+    font-family: 'Poor Story', cursive;
+    color: black;
+}
+
+.blocks{
+    font-family: 'Poor Story', cursive;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.blocks div{
+    width: 70px; height: 70px;
+    border-radius: 50%;
+    background: beige;
+    animation: anim 5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocks div:nth-child(1) {
+    background: green;
+    color: gold;
+    --color: gold;
+    --text: green;
+}
+.blocks div:nth-child(2) {
+    background: dodgerblue;
+    color:tomato;
+    animation-delay: 500ms;
+    --color: tomato;
+    --text: dodgerblue;
+}
+.blocks div:nth-child(3) {
+    background: tomato;
+    color:dodgerblue;
+    animation-delay: 1000ms;
+    --color: dodgerblue;
+    --text: tomato;
+}
+.blocks div:nth-child(4) {
+    background: gold;
+    color: green;
+    animation-delay: 1500ms;
+    --color: green;
+    --text: gold;
+}
+
+@keyframes anim {
+    50%{
+        transform: translate(0, 300px);
+        background: var(--color);
+        color: var(--text);
+    }
+}
+    

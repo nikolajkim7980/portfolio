@@ -1,0 +1,128 @@
+body{
+    background: black;
+}
+.heading{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.solarsystems-link{
+    font-family: 'Poor Story', cursive;
+    color: white;
+}
+
+.sun{
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: yellow;
+    box-shadow: 0 0 30px yellow;
+    
+    position: absolute;
+    top: calc(50vh - 25px);
+    left: calc(50vw - 25px);
+}    
+.mercury{
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, white, red);
+    
+    position: absolute;
+    top: calc(50vh - 10px - 40px);
+    left: calc(50vw - 10px);
+    
+    animation: rotate linear 1.5s infinite;
+    transform-origin: 50% 500%;
+}
+.venus{
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, white, red);
+    
+    position: absolute;
+    top: calc(50vh - 7.5px - 80px);
+    left: calc(50vw - 7.5px);
+    
+    animation: rotate linear 2s infinite;
+    transform-origin: 50% 600%;
+}
+.earth{
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, blue, green);
+    
+    position: absolute;
+    top: calc(50vh - 10px - 110px);
+    left: calc(50vw - 10px);
+    
+    animation: rotate linear 3s infinite;
+    transform-origin: 50% 700%;
+}
+.mars{
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, red, brown);
+    
+    position: absolute;
+    top: calc(50vh - 10px - 160px);
+    left: calc(50vw - 10px);
+    
+    animation: rotate linear 3.5s infinite;
+    transform-origin: 50% 900%;
+}
+.jupiter{
+    width: 35px; height: 35px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, white, brown);
+    
+    position: absolute;
+    top: calc(50vh - 25px - 180px);
+    left: calc(50vw - 25px);
+    
+    animation: rotate linear 4s infinite;
+    transform-origin: 50% 700%;
+}
+.saturn{
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, brown, yellow);
+    box-shadow: 0 0 30px brown;
+    
+    position: absolute;
+    top: calc(50vh - 15px - 250px);
+    left: calc(50vw - 15px);
+    
+    animation: rotate linear 4.5s infinite;
+    transform-origin: 50% 1100%;
+}
+.uranus{
+    width: 25px; height: 25px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, white, green);
+    
+    position: absolute;
+    top: calc(50vh - 17.5px - 300px);
+    left: calc(50vw - 17.5px);
+    
+    animation: rotate linear 5s infinite;
+    transform-origin: 50% 1400%;
+}
+.neptune{
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, blue, white);
+    
+    position: absolute;
+    top: calc(50vh - 15px - 400px);
+    left: calc(50vw - 15px);
+    
+    animation: rotate linear 6s infinite;
+    transform-origin: 50% 1500%;
+}
+
+
+
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
